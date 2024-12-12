@@ -1,24 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minishell.c                                        :+:      :+:    :+:   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsalado- <jsalado-@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/12 16:42:47 by jsalado-          #+#    #+#             */
-/*   Updated: 2024/12/12 16:45:13 by jsalado-         ###   ########.fr       */
+/*   Created: 2024/12/12 16:45:31 by jsalado-          #+#    #+#             */
+/*   Updated: 2024/12/12 16:45:52 by jsalado-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void	ft_putstr(char *str)
+void	ft_putchar(char c)
 {
+	write(1, &c, 1);
 	return ;
-}
-
-int	main(void)
-{
-	printf("Hola Mundo!");
-	return (0);
 }
